@@ -8,4 +8,6 @@ router.get("/", function (req, res, next) {
 });
 router.get("/api/getList", ctrl.data.visitors);
 
+router.post("/api/postVisitorsMsg", ctrl.put.visitorsMsg);
+
 module.exports = router;
