@@ -6,7 +6,6 @@ const ctrl = require("./ctrl");
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Express" });
 });
-router.get("/api/getList", ctrl.data.visitors);
 router.get("/api/getVisitorsList", ctrl.get.visitorsList);
 
 router.post("/api/postVisitorsMsg", ctrl.post.visitorsMsg);

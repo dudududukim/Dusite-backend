@@ -1,15 +1,5 @@
 "use strict";
-
-const getVisitors = require("../models/getVisitors");
-
 const visitors = require("../models/visitors");
-
-const data = {
-  visitors: async (req, res) => {
-    const visitorsData = await getVisitors;
-    return res.json(visitorsData);
-  },
-};
 
 const post = {
   visitorsMsg: async (req, res) => {
@@ -28,7 +18,6 @@ const get = {
 };
 
 module.exports = {
-  data,
   post,
   get,
 };
